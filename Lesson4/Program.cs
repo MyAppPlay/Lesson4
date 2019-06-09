@@ -1,5 +1,5 @@
 ﻿using System;
-//Гаврилов Владимир
+//Гаврилов Владимир 
 namespace Lesson4
 {
     class Program
