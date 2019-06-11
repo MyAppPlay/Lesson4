@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+
 //Гаврилов Владимир 
 namespace Lesson4
 {
@@ -46,9 +48,38 @@ namespace Lesson4
             }
             Console.WriteLine("Количество пар элементов массива, в которых хотя бы одно число делится на три - " + schetchik);
 
-
             #endregion
+
+            MyArray1 x = new MyArray1(10, 0, 100);
+            Console.WriteLine(x.ToString());
+            Console.WriteLine(x.Max);
+            Console.WriteLine(x.Min);
+            Console.WriteLine(x.CountPositive);
+
+            #region Ex2        //В Main продемонстрировать работу класса.
+            MyArray1 y = new MyArray1(20, 15, 150, 5);
+            Console.WriteLine(y.ToString());
+            Console.WriteLine(y.Sum);//Демострация работы свойств(Ex2)
+            y.Inverse();//и методов
+            Console.WriteLine(y.ToString());
+            y.Multi(-3);
+            Console.WriteLine(y.ToString());
+            Console.WriteLine(y.MaxCount);
+
+            y.Read("data.txt");
+            Console.WriteLine(y.ToString());
+
+            y.Rec("data2.txt");
+            
+            #endregion
+
+
+
+
+
+
             Console.ReadKey();
         }
     }
+
 }
