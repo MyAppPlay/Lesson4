@@ -56,7 +56,7 @@ namespace Lesson4
             Console.WriteLine(x.Min);
             Console.WriteLine(x.CountPositive);
 
-            #region Ex2        //В Main продемонстрировать работу класса.
+            #region Ex2       //В Main продемонстрировать работу класса.
             MyArray1 y = new MyArray1(20, 15, 150, 5);
             Console.WriteLine(y.ToString());
             Console.WriteLine(y.Sum);//Демострация работы свойств(Ex2)
